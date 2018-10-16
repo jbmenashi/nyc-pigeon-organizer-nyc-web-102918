@@ -23,6 +23,8 @@ def nyc_pigeon_organizer(data)
             pigeon_list[bird][category] << indiv_trait.to_s
           else
             pigeon_list[bird][category] = [indiv_trait.to_s]
+          end
+        else 
         end
       end
     end
