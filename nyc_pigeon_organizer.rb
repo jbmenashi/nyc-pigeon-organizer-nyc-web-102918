@@ -22,6 +22,7 @@ def nyc_pigeon_organizer(data)
           bird[category] = indiv_trait
         else
           bird[category] = {}
+        end
       end
     end
   end
