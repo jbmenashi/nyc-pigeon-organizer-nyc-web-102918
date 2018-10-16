@@ -1,3 +1,4 @@
+
         :color => {
           :purple => ["Theo", "Peter Jr.", "Lucky"],
           :grey => ["Theo", "Peter Jr.", "Ms. K"],
@@ -13,5 +14,6 @@
           "City Hall" => ["Andrew"]}
 
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  new_hash = {}
+  
 end
