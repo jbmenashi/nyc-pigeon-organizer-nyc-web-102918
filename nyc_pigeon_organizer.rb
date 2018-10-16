@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
       birds.each do |bird|
         if pigeon_list[bird] = category
           bird[category] << indiv_trait
-          binding.pry
+          
         end
       end
     end
