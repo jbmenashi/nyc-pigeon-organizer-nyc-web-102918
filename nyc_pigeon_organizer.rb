@@ -19,7 +19,6 @@ def nyc_pigeon_organizer(data)
     trait.each do |indiv_trait, birds|
       birds.each do |bird|
         binding.pry
-        end
       end
     end
   end
