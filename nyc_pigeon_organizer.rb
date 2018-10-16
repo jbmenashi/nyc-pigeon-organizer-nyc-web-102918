@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
           else
             pigeon_list[bird][category] = [indiv_trait.to_s]
           end
-        else 
+        else pigeon_list[bird] = 
         end
       end
     end
