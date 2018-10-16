@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
     trait.each do |indiv_trait, birds|
       birds.each do |bird|
         if pigeon_list.keys?(bird)
-          bird[category] = indiv_trait
+          bird[categor
         else
           bird[category] = {}
         end
