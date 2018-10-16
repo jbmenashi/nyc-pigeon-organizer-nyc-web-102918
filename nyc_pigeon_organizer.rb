@@ -22,6 +22,7 @@ def nyc_pigeon_organizer(data)
           return category
         elsif pigeon_list[bird] = nil 
           pigeon_list[bird] = category
+        end
       end
     end
   end
