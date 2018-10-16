@@ -15,16 +15,16 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
-  data.each do |category, trait|
-    trait.each do |indiv_trait, birds|
-      birds.each do |bird|
-        if pigeon_list.key?(bird)
-          if pigeon_list[bird].key?(category)
-            pigeon_list[bird][category] << indiv_trait.to_s
+  data.each do |category, trait| # color, purple hash
+    trait.each do |indiv_trait, birds| # purple, array of birds
+      birds.each do |bird| # birds are the keys of the new hash
+        if pigeon_list.key?(bird) #does the new hash have the bird as a key yet? if yes...
+          if pigeon_list[bird].key?(category) # is the category yet a key of the inner bird hash?
+            pigeon_list[bird][category] << indiv_trait.to_s # if so, then the array of values already exists, and you push on the array
           else
-            pigeon_list[bird][category] = [indiv_trait.to_s]
+            pigeon_list[bird][category] = [indiv_trait.to_s] # if not, then you're creating a new array with that indiv trait
           end
-        else pigeon_list[bird] = {category => [indiv_trait.to_s]}
+        else pigeon_list[bird] = {category => [indiv_trait.to_s]} # and if the category wasn't a key yet at all, you're adding the keys and values at the same time
         end
       end
     end
