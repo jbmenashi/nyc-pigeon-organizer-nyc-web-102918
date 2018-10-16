@@ -20,6 +20,7 @@ def nyc_pigeon_organizer(data)
       birds.each do |bird|
         if pigeon_list.key?(bird)
           if pigeon_list[bird].key?(category)
+            
         else
           bird[category] = {}
         end
