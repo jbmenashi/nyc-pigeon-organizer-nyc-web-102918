@@ -14,7 +14,10 @@ require 'pry'
           "City Hall" => ["Andrew"]}
 
 def nyc_pigeon_organizer(data)
-  new_hash = {}
+  pigeon_list = {}
   data.each do |category, trait|
-    trait.each do |
+    trait.each do |indiv_trait, birds|
+      binding.pry
+    end
+  end
 end
