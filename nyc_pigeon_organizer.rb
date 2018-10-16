@@ -18,6 +18,7 @@ def nyc_pigeon_organizer(data)
   data.each do |category, trait|
     trait.each do |indiv_trait, birds|
       birds.each do |bird|
+        pigeon_list[bird] = category
         binding.pry
       end
     end
