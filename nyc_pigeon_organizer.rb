@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
           if pigeon_list[bird].key?(category)
             pigeon_list[bird][category] << indiv_trait.to_s
           else
-            pigeon_list[bird][category] << indiv_trait.to_s
+            pigeon_list[bird][category] = [indiv_trait.to_s]
         end
       end
     end
